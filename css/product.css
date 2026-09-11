@@ -7,3 +7,10 @@
 /* GATE 24 catalog / equipment detail */
 .catalog-head{background:var(--blue);color:#fff}.catalog-head .shell>div{display:flex;justify-content:space-between;align-items:end}.catalog-head .shell>div>span{font:13px/1.7 var(--mono);text-align:right;color:var(--lime)}.catalog-head h1{letter-spacing:-.07em}.filter-bar button.active{background:var(--lime);border-color:var(--lime)}.catalog-grid .card-image{border:1px solid var(--line)}.detail{background:var(--surface)}.main-image{background:#e1e6ed;max-width:470px}.main-image img{padding:5%;object-fit:contain}.thumb{background:#e1e6ed}.thumb img{object-fit:contain;padding:4%}.thumb.active{border:3px solid var(--blue)}.product-info .crumb{color:var(--blue)}.product-info h1{font-size:clamp(46px,5vw,76px)}.edition-options button.active{background:var(--blue);color:#fff;border-color:var(--blue)}.add-main{background:var(--lime)}.meta-list b{color:var(--blue)}.tracklist h2{font-family:var(--mono)}.recommend{background:var(--paper)}.lb-close,.lb-nav{background:var(--lime)}
 @media(max-width:600px){.catalog-head .shell>div>span{display:none}}
+
+/* 商品頁資訊文字規格；保留原四欄卡片與詳情主圖尺寸。 */
+.filter-bar button,.result-count,.gallery-caption,.product-info .crumb,.edition-head,.edition-options button,.meta-list div,.tracklist li,.lb-dialog p,.catalog-head .shell>div>span{font-size:16px}
+@media(max-width:600px){.tracklist li{font-size:16px}}
+
+/* 主圖下方僅保留圖片計數，不顯示縮圖說明文字。 */
+.gallery-caption span+span{display:none}

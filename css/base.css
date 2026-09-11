@@ -10,6 +10,23 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;transition-delay:0s!important;animation:none!important}}
 .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px;border-top:2px solid var(--ink);padding-top:19px}.section-head h2{font-size:clamp(32px,4vw,54px);line-height:1;letter-spacing:-.045em;margin-top:8px}.drawer-nav>button{display:block;width:100%;text-align:left;padding:16px 0;border-bottom:1px solid var(--line);font-size:17px}
 
+/* 套版共用字級：資訊型小字維持 16px 以上。 */
+.eyebrow,.text-link,.button,.desktop-nav,.dropdown a,.dropdown button,.member-trigger,.section-head>a{font-size:16px}
+.card-meta,.card-artist,.price{font-size:16px}
+.footer-brand>p,.footer-column a,.footer-column span,.footer-column p,.footer-bottom{font-size:16px}
+.footer-column h3{font-size:18px}
+.footer-column button{display:block;border:0;background:transparent;color:#b9b8b0;padding:0;text-align:left;font-size:16px;line-height:1.8;cursor:pointer}
+.footer-column button:hover{color:var(--lime)}
+.footer-statement{font-size:clamp(64px,12vw,180px);line-height:.78;text-align:center;white-space:nowrap;letter-spacing:-.08em}
+.policy-copy{font-size:16px;line-height:1.85;color:var(--muted)}
+.policy-copy p+p{margin-top:16px}
+.drawer-nav details a,.theme-switcher button,.toast{font-size:16px}
+@media(max-width:600px){.member-trigger,.section-heading .text-link,.card-meta,.card-artist,.footer-bottom{font-size:16px}.footer-statement{font-size:18vw}}
+
 /* GATE 24 system */
 :root{--paper:#edf1f6;--surface:#f8fafc;--ink:#101216;--muted:#5d6470;--line:#bdc5d0;--accent:#caff47;--blue:#0a45d8;--lime:#caff47;--head:76px;--max:1320px;--mono:Consolas,'Liberation Mono',monospace}body[data-theme=night]{--paper:#10141d;--surface:#171d28;--ink:#f2f5f9;--muted:#aeb7c5;--line:#3a4351}.site-header{background:#eef2f7;color:#111;border-bottom:1px solid var(--line)}body[data-theme=night] .site-header{background:#111722;color:#fff}.desktop-nav>a[aria-current]{color:var(--blue);font-weight:800}.brand-name{letter-spacing:-.03em}.brand-sub{color:var(--blue);font-weight:700}.bag-count{background:var(--blue);color:#fff}.dropdown a:hover,.dropdown button:hover,.card-add:hover{background:var(--lime);color:#111;border-color:var(--lime)}.button.primary{background:var(--blue);border-color:var(--blue);color:#fff}.button.primary:hover{background:var(--lime);border-color:var(--lime);color:#111}.product-card .card-image{background:#dce2e9}.card-image img{object-fit:contain;padding:8%}.site-footer{background:#07152f}.footer-statement{color:var(--lime);font-family:var(--mono);font-size:clamp(46px,8vw,114px)}.site-footer .brand-sub{color:var(--lime)}.theme-switcher button[aria-pressed=true]{background:var(--blue);color:#fff}.toast{background:var(--blue);color:#fff}
 .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px;border-top:2px solid var(--ink);padding-top:19px}.section-head h2{font-size:clamp(32px,4vw,54px);line-height:1;letter-spacing:-.045em;margin-top:8px}.section-head>a{font-size:14px;border-bottom:1px solid;padding-bottom:4px}.drawer-nav>button{display:block;width:100%;text-align:left;padding:16px 0;border-bottom:1px solid var(--line);font-size:17px}
+
+/* GATE 視覺覆寫後再次鎖定共用規格。 */
+.section-head>a{font-size:16px}
+.footer-statement{font-size:clamp(64px,12vw,180px)}
